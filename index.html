@@ -118,32 +118,39 @@
             <p class="professional-tech">AWS · ECS Fargate · Infrastructure as Code · TF-IDF</p>
           </article>
           <article class="professional-project">
-            <div class="professional-kicker"><span>TRUIST · PRIVATE BANKING</span><span>03</span></div>
+            <div class="professional-kicker"><span>CAPITAL ONE · CASE MANAGEMENT</span><span>03</span></div>
+            <h3>Case workflows &amp; Day 2 payments</h3>
+            <p>Architected and developed case-management workflows for Small Business Banking and Domestic Collections, contributed to Fraud Recovery workflows, and supported Day 2 Payments Processing.</p>
+            <div class="case-metrics"><span><strong>2</strong><small>workflows architected</small></span><span><strong>Day 2</strong><small>payments operations</small></span></div>
+            <p class="professional-tech">Proprietary JavaScript state-machine framework · AngularJS · Python Lambdas</p>
+          </article>
+          <article class="professional-project">
+            <div class="professional-kicker"><span>TRUIST · PRIVATE BANKING</span><span>04</span></div>
             <h3>Core banking cloud delivery</h3>
-            <p>Integrated vendors and core banking capabilities, modernized Java services, and supported a hybrid estate spanning cloud microservices and on-premise servers.</p>
+            <p>Integrated vendors and core banking capabilities, developed cloud microservice features, and supported the new Wealth Management website primarily through CI/CD management across multiple repository pipelines.</p>
             <div class="case-metrics"><span><strong>19</strong><small>AWS microservices</small></span><span><strong>10</strong><small>on-premise servers</small></span><span><strong>8 &rarr; 11</strong><small>Java upgrade</small></span></div>
-            <p class="professional-tech">AWS · Java · Spring Boot · GitLab CI/CD · Selenium</p>
+            <p class="professional-tech">AWS · Java · Spring Boot · GitLab CI/CD · Wealth Management</p>
           </article>
           <article class="professional-project">
-            <div class="professional-kicker"><span>BANK OF AMERICA · DIGITAL BANKING</span><span>04</span></div>
-            <h3>Banking chatbots &amp; engineering scale</h3>
-            <p>Developed conversational AI for wholesale, business, and private banking, then grew engineering capacity and created a configurable DevOps chatbot.</p>
+            <div class="professional-kicker"><span>BANK OF AMERICA · DEVELOPER OPERATIONS</span><span>05</span></div>
+            <h3>EricaOps developer chatbot</h3>
+            <p>Primary work supported Erica's human-in-the-loop Retail Call Center questions. Separately, invented and built EricaOps end-to-end, including its name: a Developer Operations chatbot for checking deployed software versions, running health checks, and managing lower-environment releases. It was adopted across departments and spun into its own support team.</p>
             <div class="case-metrics"><span><strong>2</strong><small>full-stack teams built</small></span><span><strong>10</strong><small>engineers across teams</small></span></div>
-            <p class="professional-tech">Java · Spring Boot · NLP · Groovy · Angular · Selenium</p>
+            <p class="professional-tech">EricaOps: Java · Maven · Spring · Ansible API · Jenkins API</p>
           </article>
           <article class="professional-project">
-            <div class="professional-kicker"><span>USCIS · DIGITAL SERVICES</span><span>05</span></div>
-            <h3>Secure immigration applications</h3>
-            <p>Contributed to moving paper-based immigration forms to secure web applications and supported performance and security improvements.</p>
+            <div class="professional-kicker"><span>USCIS · DIGITAL SERVICES</span><span>06</span></div>
+            <h3>Accessible digital immigration forms</h3>
+            <p>Developed multiple USCIS form workflows and supported the remaining digitization effort, making forms easier for the public to access and administrators to manage while improving cost efficiency over paper processes.</p>
             <div class="case-metrics"><span><strong>1.3M+</strong><small>Form I-90 applications</small></span><span><strong>95%</strong><small>customer satisfaction</small></span></div>
             <p class="professional-tech">Java · Spring · REST · AngularJS · Fortify · SonarQube</p>
           </article>
           <article class="professional-project">
-            <div class="professional-kicker"><span>BRDG TECH · CMS</span><span>06</span></div>
-            <h3>Fulcrum &amp; CMS healthcare data pipelines</h3>
-            <p>At BRDG Tech, architected Fulcrum for high-throughput ACA marketplace processing. At Accenture Federal, led CMS risk-adjustment and reinsurance pipelines for large-scale healthcare allocation.</p>
+            <div class="professional-kicker"><span>BRDG TECH · ACA MARKETPLACE</span><span>07</span></div>
+            <h3>Fulcrum &amp; healthcare claims processing</h3>
+            <p>At BRDG Tech, applied experience from ACA Risk Adjustment and Reinsurance programs to create Fulcrum, a high-throughput solution tailored to reduce costs for ACA marketplace insurers. At Accenture Federal, architected and developed CMS Risk Adjustment and Reinsurance software to process medical and pharmaceutical claims.</p>
             <div class="case-metrics"><span><strong>500K</strong><small>records per minute</small></span><span><strong>$14.6B</strong><small>healthcare allocations</small></span></div>
-            <p class="professional-tech">Java · Spring Batch · AWS · MySQL · ETL</p>
+            <p class="professional-tech">Fulcrum: Java · Maven · Spring · AWS EC2 · AWS RDS for MySQL · ACA pipelines: Spring Batch · ETL</p>
           </article>
         </div>
       </section>
@@ -178,31 +185,61 @@
 
       <section class="experience-section" id="experience" aria-labelledby="experience-title">
         <div class="shell experience-inner">
-          <div class="experience-heading"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">Thirteen years of <em>building at scale.</em></h2><p>Selected roles and outcomes across financial services, healthcare, and federal systems.</p></div>
+          <div class="experience-heading"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">Thirteen years of <em>building at scale.</em></h2><p>Selected roles and outcomes across financial services, healthcare, and federal systems. Some contract and subcontract engagements overlapped; dates reflect those concurrent roles.</p></div>
           <div class="experience-list">
             <details class="experience-entry" open>
               <summary><span class="experience-role">Senior Software Engineer / Fullstack Engineer III</span><span class="experience-meta">Capital One <i>·</i> Nov 2022&ndash;Present</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
-              <ul><li>Architected a 78-million-record migration using deduplication and aggregation rules, reducing data volume by 65&ndash;70% and cutting about 980 hours of projected batch runtime.</li><li>Modernized ACH and Check 21 / X9.37 payment feeds with AWS SQS, EventBridge, and Lambda so downstream teams could consume events in Databricks, OneLake, and Snowflake.</li><li>Designed a change data capture pipeline from RDS SQL Server through AWS DMS, Kinesis, and Lambda into Databricks and Delta Lake; created self-service dashboards for daily reconciliation.</li><li>Built self-healing recovery that autonomously remediated 237 production outages and saved about 79 hours of off-hour support. Also built event-driven, cross-region disaster recovery infrastructure as code.</li><li>Led remediation of 20 high-severity SSRF, RCE, and open-redirect findings using test-driven development and shift-left SAST/SCA practices.</li><li>Led a six-person team building an ECS Fargate AIOps triage assistant using TF-IDF classification and incident history. Won the 2026 divisional payments hackathon with an AWS Textract document-processing proof of concept.</li></ul>
+              <ul>
+                <li>Architected a 78-million-record migration using deduplication and aggregation rules, reducing data volume by 65&ndash;70% and cutting about 980 hours of projected batch runtime.</li>
+                <li>Modernized ACH and Check 21 / X9.37 payment feeds with AWS SQS, EventBridge, and Lambda so downstream teams could consume events in Databricks, OneLake, and Snowflake.</li>
+                <li>Designed a change data capture pipeline from RDS SQL Server through AWS DMS, Kinesis, and Lambda into Databricks and Delta Lake; created self-service dashboards for daily reconciliation.</li>
+                <li>Architected and developed Small Business Banking and Domestic Collections case-management workflows using a proprietary JavaScript state-machine framework. AngularJS managed the case UI, while Python Lambdas processed documents and events.</li>
+                <li>Contributed to additional case workflows, including Fraud Recovery, and supported Day 2 Payments Processing.</li>
+                <li>Built self-healing recovery that autonomously remediated 237 production outages and saved about 79 hours of off-hour support. Also built event-driven, cross-region disaster recovery infrastructure as code.</li>
+                <li>Led remediation of 20 high-severity SSRF, RCE, and open-redirect findings using test-driven development and shift-left SAST/SCA practices.</li>
+                <li>Led a six-person team building an ECS Fargate AIOps triage assistant using TF-IDF classification and incident history. Won the 2026 divisional payments hackathon with an AWS Textract document-processing proof of concept.</li>
+              </ul>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II</span><span class="experience-meta">Truist Financial <i>·</i> Sep 2021&ndash;Nov 2022</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
-              <ul><li>Integrated third-party vendors and core banking capabilities into the Truist Private Banking platform.</li><li>Maintained GitLab CI/CD pipelines and deployment automation for 19 AWS microservices, and served as the technical point of contact for issues across those services and 10 on-premise servers.</li><li>Led the enterprise Java upgrade from Java 8 to Java 11 across 19 microservices.</li><li>Planned disaster recovery and static-analysis improvements; expanded Selenium automation and addressed code-quality and vulnerability findings with Veracode, SonarQube, and Black Duck.</li></ul>
+              <ul>
+                <li>Integrated third-party vendors and core banking capabilities into the Truist Private Banking platform.</li>
+                <li>Supported and enhanced CI/CD and deployment automation across multiple repository pipelines for 19 AWS microservices.</li>
+                <li>Supported the new Wealth Management website primarily through CI/CD pipeline management across multiple repositories; also developed cloud-native microservice features.</li>
+                <li>Served as the point of contact for issues across 19 services and 10 on-premise servers.</li>
+                <li>Led the enterprise Java upgrade from Java 8 to Java 11 across 19 microservices.</li>
+                <li>Planned disaster recovery and static-analysis improvements; expanded Selenium automation and addressed code-quality and vulnerability findings with Veracode, SonarQube, and Black Duck.</li>
+              </ul>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II</span><span class="experience-meta">Bank of America <i>·</i> Aug 2018&ndash;Sep 2021</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
-              <ul><li>Built full-stack AI conversational chatbots for Wholesale, Business, and Private Banking call-center teams.</li><li>Scaled engineering from a solo developer to interviewing, hiring, and leading two full-stack teams totaling 10 engineers.</li><li>Created a configurable DevOps chatbot, presented it at technical conventions, and secured executive sponsorship, funding, and copyright filings.</li><li>Expanded Selenium testing and resolved static-analysis findings with Checkmarx and SonarQube.</li></ul>
+              <ul>
+                <li>Primary work supported Erica's human-in-the-loop use for Retail Call Center questions.</li>
+                <li>Separately invented EricaOps and its name, then wrote the entire Developer Operations tool: it checked deployed software versions, ran health checks, and managed lower-environment releases.</li>
+                <li>Built EricaOps with Java, Maven, Spring, the Ansible API, and the Jenkins API. The copyrighted innovation was adopted across departments and spun into its own support team.</li>
+                <li>Scaled engineering from a solo developer to interviewing, hiring, and leading two full-stack teams totaling 10 engineers.</li>
+                <li>Expanded Selenium testing and resolved static-analysis findings with Checkmarx and SonarQube.</li>
+              </ul>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II · USCIS / DHS contract</span><span class="experience-meta">ERP International / Quadrant <i>·</i> Jun 2017&ndash;Jul 2018</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
-              <ul><li>Helped transform paper-based immigration and citizenship forms into secure online applications for the Department of Homeland Security and USCIS.</li><li>Contributed to services processing more than 1.3 million Form I-90 applications while achieving a 95% customer satisfaction rating.</li><li>Evaluated performance and security with Fortify and SonarQube; received a Certificate of Appreciation from the Office of Information Technology and Transformation Delivery Division.</li></ul>
+              <ul>
+                <li>Developed multiple USCIS form workflows and supported digitization of the remaining forms, making them easier for the public to access and administrators to manage while improving cost efficiency over paper forms.</li>
+                <li>Contributed to secure online services processing more than 1.3 million Form I-90 applications while achieving a 95% customer satisfaction rating.</li>
+                <li>Evaluated performance and security with Fortify and SonarQube; received a Certificate of Appreciation from the Office of Information Technology and Transformation Delivery Division.</li>
+              </ul>
             </details>
             <details class="experience-entry">
-              <summary><span class="experience-role">Chief Technical Officer</span><span class="experience-meta">BRDG Tech <i>·</i> Jun 2016&ndash;Feb 2018</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
-              <ul><li>Led engineering across backend architecture, database schema design, and cloud-service development.</li><li>Architected Fulcrum, an AWS processing engine handling up to 500,000 ACA health-enrollment and medical records per minute.</li><li>Improved backend performance, latency, and system resilience; provided forensic code audits and technical analysis supporting Department of Justice litigation.</li></ul>
+              <summary><span class="experience-role">Chief Technical Officer</span><span class="experience-meta">BRDG Tech <i>·</i> 2016&ndash;2017</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
+              <ul>
+                <li>Applied experience from ACA Risk Adjustment and Reinsurance programs to create Fulcrum, a solution tailored to help insurers reduce costs in the ACA marketplace.</li>
+                <li>Architected Fulcrum, an AWS processing engine handling up to 500,000 ACA health-enrollment and medical records per minute.</li>
+                <li>Developed Fulcrum with Java, Maven, Spring, AWS RDS for MySQL, and AWS EC2; also provided forensic technical analysis supporting Department of Justice litigation.</li>
+              </ul>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II · CMS contractor</span><span class="experience-meta">Accenture Federal <i>·</i> Mar 2014&ndash;Jun 2016</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
-              <ul><li>Led Risk Adjustment and Reinsurance big-data pipelines for CMS ACA EDGE servers, supporting $14.6 billion in healthcare allocations.</li><li>Managed automated aggregation and ETL routines for weekly executive and operational reports.</li><li>Led technical resolution calls with health-insurance issuers to resolve data disputes and reporting discrepancies.</li></ul>
+              <ul><li>Architected and developed CMS Risk Adjustment and Reinsurance software for processing medical and pharmaceutical claims on ACA EDGE servers, supporting $14.6 billion in healthcare allocations.</li><li>Managed automated aggregation and ETL routines for weekly executive and operational reports.</li><li>Led technical resolution calls with health-insurance issuers to resolve data disputes and reporting discrepancies.</li></ul>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">J2EE Developer · Wealth Management</span><span class="experience-meta">Wells Fargo <i>·</i> Oct 2013&ndash;Jan 2014</span><span class="experience-toggle" aria-hidden="true">+</span></summary>

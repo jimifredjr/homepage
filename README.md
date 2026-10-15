@@ -7,7 +7,9 @@ A static personal portfolio for James Davis, a senior software engineer and AWS 
 ## What's on the Site
 
 - Professional introduction and selected career highlights
-- Personal projects: [Advanced Gmail Spam Filter](https://github.com/jimifredjr/gmail-spam-filter) and [GitHub-Jenkins Continuous Integration](https://github.com/jimifredjr/git-jenkins-ci)
+- Selected professional work across payment modernization, operational resilience, banking platforms, public services, and healthcare data systems
+- Personal projects: [Advanced Gmail Spam Filter](https://github.com/jimifredjr/gmail-spam-filter) and [DIY Home Assistant Devices](https://github.com/jimifredjr/home-assistant) (in progress)
+- Technology inventory grouped by languages, cloud, data, frameworks, testing, and delivery tools
 - Expandable work history with selected responsibilities and outcomes
 - About section with education, certifications, technologies, and leadership approach
 - Notes section for future writing

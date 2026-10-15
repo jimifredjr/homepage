@@ -23,8 +23,10 @@
           <span></span><span></span>
         </button>
         <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-          <a href="#projects">Projects</a>
+          <a href="#work">Work</a>
+          <a href="#personal-projects">Personal</a>
           <a href="#experience">Experience</a>
+          <a href="#technologies">Technologies</a>
           <a href="#about">About</a>
           <a href="#notes">Notes</a>
           <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">&#8599;</span></a>
@@ -36,10 +38,10 @@
       <section class="hero shell" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> Senior Software &amp; Fullstack Engineer</p>
-          <h1 id="hero-title">Cloud modernization, built for <em>what's next.</em></h1>
+          <h1 id="hero-title">Engineering<br><em>at enterprise scale.</em></h1>
           <p class="hero-intro">I'm James Davis, an AWS Solutions Architect and Oracle Java Certified engineer with 13+ years building enterprise systems across financial services, healthcare, and the federal sector.</p>
           <div class="hero-actions">
-            <a class="button button-dark" href="#projects">View personal projects <span aria-hidden="true">&#8595;</span></a>
+            <a class="button button-dark" href="#work">View selected work <span aria-hidden="true">&#8595;</span></a>
             <a class="text-link" href="mailto:jimifredjr@gmail.com">Email me <span aria-hidden="true">&#8599;</span></a>
           </div>
           <p class="availability"><span class="availability-line"></span> AWS cloud · Serverless · On-premises</p>
@@ -95,10 +97,61 @@
         </div>
       </section>
 
-      <section class="work-section shell section-space" id="projects" aria-labelledby="work-title">
+      <section class="work-section shell section-space" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <div><p class="eyebrow">01 / Personal projects</p><h2 id="work-title">Ideas made <em>real.</em></h2></div>
-          <p class="section-intro">Independent projects exploring email security and automated continuous integration. Source code is available on GitHub.</p>
+          <div><p class="eyebrow">01 / Selected professional work</p><h2 id="work-title">Complex systems.<br><em>Measurable outcomes.</em></h2></div>
+          <p class="section-intro">Selected engineering work across payments, banking, public services, and healthcare. Project details are summarized from my professional experience.</p>
+        </div>
+        <div class="professional-grid">
+          <article class="professional-project">
+            <div class="professional-kicker"><span>CAPITAL ONE · PAYMENTS</span><span>01</span></div>
+            <h3>Payment data modernization</h3>
+            <p>Architected a high-volume data migration and modernized payment feeds with event-driven AWS services, streaming data into analytics platforms.</p>
+            <div class="case-metrics"><span><strong>78M</strong><small>records migrated</small></span><span><strong>65&ndash;70%</strong><small>less data volume</small></span><span><strong>~980h</strong><small>projected batch runtime cut</small></span></div>
+            <p class="professional-tech">AWS DMS · Kinesis · Lambda · Databricks · Delta Lake · OneLake · Snowflake</p>
+          </article>
+          <article class="professional-project">
+            <div class="professional-kicker"><span>CAPITAL ONE · RESILIENCE</span><span>02</span></div>
+            <h3>Self-healing operations &amp; security</h3>
+            <p>Built automated recovery and cross-region disaster recovery, led high-severity application security remediation, and guided a six-person team on AIOps triage.</p>
+            <div class="case-metrics"><span><strong>237</strong><small>outages remediated</small></span><span><strong>~79h</strong><small>support time saved</small></span><span><strong>20</strong><small>high-severity findings fixed</small></span></div>
+            <p class="professional-tech">AWS · ECS Fargate · Infrastructure as Code · TF-IDF</p>
+          </article>
+          <article class="professional-project">
+            <div class="professional-kicker"><span>TRUIST · PRIVATE BANKING</span><span>03</span></div>
+            <h3>Core banking cloud delivery</h3>
+            <p>Integrated vendors and core banking capabilities, modernized Java services, and supported a hybrid estate spanning cloud microservices and on-premise servers.</p>
+            <div class="case-metrics"><span><strong>19</strong><small>AWS microservices</small></span><span><strong>10</strong><small>on-premise servers</small></span><span><strong>8 &rarr; 11</strong><small>Java upgrade</small></span></div>
+            <p class="professional-tech">AWS · Java · Spring Boot · GitLab CI/CD · Selenium</p>
+          </article>
+          <article class="professional-project">
+            <div class="professional-kicker"><span>BANK OF AMERICA · DIGITAL BANKING</span><span>04</span></div>
+            <h3>Banking chatbots &amp; engineering scale</h3>
+            <p>Developed conversational AI for wholesale, business, and private banking, then grew engineering capacity and created a configurable DevOps chatbot.</p>
+            <div class="case-metrics"><span><strong>2</strong><small>full-stack teams built</small></span><span><strong>10</strong><small>engineers across teams</small></span></div>
+            <p class="professional-tech">Java · Spring Boot · NLP · Groovy · Angular · Selenium</p>
+          </article>
+          <article class="professional-project">
+            <div class="professional-kicker"><span>USCIS · DIGITAL SERVICES</span><span>05</span></div>
+            <h3>Secure immigration applications</h3>
+            <p>Contributed to moving paper-based immigration forms to secure web applications and supported performance and security improvements.</p>
+            <div class="case-metrics"><span><strong>1.3M+</strong><small>Form I-90 applications</small></span><span><strong>95%</strong><small>customer satisfaction</small></span></div>
+            <p class="professional-tech">Java · Spring · REST · AngularJS · Fortify · SonarQube</p>
+          </article>
+          <article class="professional-project">
+            <div class="professional-kicker"><span>BRDG TECH · CMS</span><span>06</span></div>
+            <h3>Fulcrum &amp; CMS healthcare data pipelines</h3>
+            <p>At BRDG Tech, architected Fulcrum for high-throughput ACA marketplace processing. At Accenture Federal, led CMS risk-adjustment and reinsurance pipelines for large-scale healthcare allocation.</p>
+            <div class="case-metrics"><span><strong>500K</strong><small>records per minute</small></span><span><strong>$14.6B</strong><small>healthcare allocations</small></span></div>
+            <p class="professional-tech">Java · Spring Batch · AWS · MySQL · ETL</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="personal-projects-section shell section-space" id="personal-projects" aria-labelledby="personal-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / Personal projects</p><h2 id="personal-title">Things I build <em>for myself.</em></h2></div>
+          <p class="section-intro">Independent experiments in email security and home automation, alongside the work I've done professionally.</p>
         </div>
         <div class="project-grid">
           <article class="project project-large">
@@ -111,13 +164,13 @@
             <a class="project-source" href="https://github.com/jimifredjr/gmail-spam-filter" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">&#8599;</span></a>
           </article>
           <article class="project project-offset">
-            <a class="project-image image-jenkins-ci" href="https://github.com/jimifredjr/git-jenkins-ci" target="_blank" rel="noopener noreferrer" aria-label="View the GitHub-Jenkins CI project source code on GitHub">
+            <a class="project-image image-home-assistant" href="https://github.com/jimifredjr/home-assistant" target="_blank" rel="noopener noreferrer" aria-label="View the Home Assistant project repository on GitHub">
               <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85" alt="Colorful analytics charts on a screen" loading="lazy">
-              <span class="image-stamp">DOCKER · JENKINS <b>02</b></span>
-              <span class="image-title">Build on<br><em>every push.</em></span>
+              <span class="image-stamp">HOME ASSISTANT · ESPHOME <b>02</b></span>
+              <span class="image-title">A more<br><em>connected home.</em></span>
             </a>
-            <div class="project-meta"><div><h3>GitHub&ndash;Jenkins Continuous Integration</h3><p>A Vagrant-provisioned Jenkins and Docker demo that runs a Node.js app build and tests when code is pushed to GitHub.</p></div><span class="project-type">Docker · Jenkins · Vagrant</span></div>
-            <a class="project-source" href="https://github.com/jimifredjr/git-jenkins-ci" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">&#8599;</span></a>
+            <div class="project-meta"><div><h3>DIY Home Assistant Devices</h3><p>In progress: a version-controlled workspace for ESPHome device configurations and related Home Assistant packages. Current local work includes a kitchen device configuration and validation tests.</p></div><span class="project-type">Home Assistant · ESPHome</span></div>
+            <a class="project-source" href="https://github.com/jimifredjr/home-assistant" target="_blank" rel="noopener noreferrer">Project on GitHub <span aria-hidden="true">&#8599;</span></a>
           </article>
         </div>
         <a class="text-link work-link" href="https://github.com/jimifredjr" target="_blank" rel="noopener noreferrer">Explore more on GitHub <span aria-hidden="true">&#8599;</span></a>
@@ -125,7 +178,7 @@
 
       <section class="experience-section" id="experience" aria-labelledby="experience-title">
         <div class="shell experience-inner">
-          <div class="experience-heading"><p class="eyebrow">02 / Experience</p><h2 id="experience-title">Thirteen years of <em>building at scale.</em></h2><p>Selected roles and outcomes across financial services, healthcare, and federal systems.</p></div>
+          <div class="experience-heading"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">Thirteen years of <em>building at scale.</em></h2><p>Selected roles and outcomes across financial services, healthcare, and federal systems.</p></div>
           <div class="experience-list">
             <details class="experience-entry" open>
               <summary><span class="experience-role">Senior Software Engineer / Fullstack Engineer III</span><span class="experience-meta">Capital One <i>·</i> Nov 2022&ndash;Present</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
@@ -144,7 +197,7 @@
               <ul><li>Helped move immigration and citizenship forms from paper to secure web applications, supporting more than 1.3 million Form I-90 applications with a 95% customer satisfaction rating.</li><li>Contributed application performance and security work; received a Certificate of Appreciation from OIT and TDD.</li></ul>
             </details>
             <details class="experience-entry">
-              <summary><span class="experience-role">Chief Technical Officer</span><span class="experience-meta">BRDG Tech <i>·</i> Jun 2016&ndash;Jun 2017</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
+              <summary><span class="experience-role">Chief Technical Officer</span><span class="experience-meta">BRDG Tech <i>·</i> Jun 2016&ndash;Feb 2018</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
               <ul><li>Architected Fulcrum, an AWS processing engine handling 500,000 health enrollment and medical records per minute.</li><li>Led backend architecture and resilience work and provided forensic technical analysis for DOJ litigation.</li></ul>
             </details>
             <details class="experience-entry">
@@ -159,10 +212,25 @@
         </div>
       </section>
 
+      <section class="technologies-section" id="technologies" aria-labelledby="technologies-title">
+        <div class="shell section-space">
+          <div class="section-heading"><div><p class="eyebrow">04 / Technology</p><h2 id="technologies-title">A broad toolkit, <em>built over time.</em></h2></div><p class="section-intro">Technologies used across my career, from enterprise Java and data platforms to cloud-native services and automation.</p></div>
+          <div class="technology-grid">
+            <article class="technology-group"><h3>Languages</h3><p>Java 6/7/8/11/21 · C# · .NET 8 · Python · TypeScript · JavaScript · Node.js · Groovy · SQL/T-SQL · Bash · PowerShell</p></article>
+            <article class="technology-group"><h3>Cloud &amp; infrastructure</h3><p>AWS Lambda · EventBridge · SQS · S3 · RDS · DMS · EC2 · CloudFormation · Kinesis · Textract · ECS Fargate · Docker · Vagrant · Infrastructure as Code</p></article>
+            <article class="technology-group"><h3>Data &amp; storage</h3><p>Databricks · Delta Lake · Snowflake · OneLake · Microsoft SQL Server · MySQL · PostgreSQL · Cassandra · ETL · Change Data Capture</p></article>
+            <article class="technology-group"><h3>Frameworks, AI &amp; interfaces</h3><p>Spring Core/Boot/Security/Batch/Data · NLP · TF-IDF · REST · SOAP · Swagger · Hibernate · EJB · Servlets · Struts · Angular · AngularJS · Bootstrap · HTML5 · CSS3</p></article>
+            <article class="technology-group"><h3>Testing, security &amp; observability</h3><p>JUnit 5 · Mockito · Selenium · Playwright · TDD · Veracode · SonarQube · Checkmarx · Black Duck · Fortify · SAST/SCA · OpenTelemetry · Splunk · New Relic · PagerDuty</p></article>
+            <article class="technology-group"><h3>Delivery &amp; engineering tools</h3><p>Git · Subversion · GitLab CI/CD · Jenkins · PuTTY · WinSCP · Agile · Kanban</p></article>
+          </div>
+          <p class="technology-note">This list spans multiple roles and projects; not every technology was used in every position.</p>
+        </div>
+      </section>
+
       <section class="about-section shell section-space" id="about" aria-labelledby="about-title">
-        <div class="section-heading"><div><p class="eyebrow">03 / About</p><h2 id="about-title">Engineering with a <em>systems view.</em></h2></div><p class="section-intro">I connect technical strategy to business outcomes, with a focus on reliable platforms, modernization, and automation.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">05 / About</p><h2 id="about-title">Engineering with a <em>systems view.</em></h2></div><p class="section-intro">I connect technical strategy to business outcomes, with a focus on reliable platforms, modernization, and automation.</p></div>
         <div class="about-grid">
-          <div class="about-copy"><p>My work spans cloud-native microservices, legacy modernization, event-driven streaming, high-throughput data systems, and application security. I enjoy taking complex systems from architecture through implementation, testing, and production support.</p><p>Outside of work, I build independent projects that let me explore different problems, from email security to multiplayer browser experiences.</p></div>
+          <div class="about-copy"><p>My work spans cloud-native microservices, legacy modernization, event-driven streaming, high-throughput data systems, and application security. I enjoy taking complex systems from architecture through implementation, testing, and production support.</p><p>Outside of work, I build independent projects that let me explore different problems, from email security to home automation.</p></div>
           <div class="about-details">
             <div><h3>Education</h3><p>B.S. Applied Mathematics, cum laude<br>North Carolina State University · 2013</p></div>
             <div><h3>Certifications</h3><p>AWS Certified Solutions Architect &ndash; Associate · 2023<br>Oracle Certified Associate, Java SE 7 · 2014</p></div>
@@ -180,13 +248,13 @@
       </section>
 
       <section class="journal-section shell section-space" id="notes" aria-labelledby="notes-title">
-        <div class="journal-heading"><div><p class="eyebrow">04 / Notes</p><h2 id="notes-title">A place for <em>what I'm learning.</em></h2></div><p>Practical notes on cloud architecture, software engineering, and lessons from personal projects.</p></div>
+        <div class="journal-heading"><div><p class="eyebrow">06 / Notes</p><h2 id="notes-title">A place for <em>what I'm learning.</em></h2></div><p>Practical notes on cloud architecture, software engineering, and lessons from personal projects.</p></div>
         <div class="notes-teaser"><span class="journal-date">FIRST POSTS IN PROGRESS</span><p>I'm putting together write-ups from the systems I build and the problems I solve.</p><a class="text-link" href="mailto:jimifredjr@gmail.com?subject=Portfolio%20notes">Suggest a topic <span aria-hidden="true">&#8599;</span></a></div>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="shell contact-inner">
-          <div><p class="eyebrow">05 / Contact</p><h2 id="contact-title">Let's talk<br><em>software.</em></h2></div>
+          <div><p class="eyebrow">07 / Contact</p><h2 id="contact-title">Let's talk<br><em>software.</em></h2></div>
           <div class="contact-action"><p>For questions about my work, project ideas, or professional conversations, email me.</p><a class="button button-light" href="mailto:jimifredjr@gmail.com">jimifredjr@gmail.com <span aria-hidden="true">&#8599;</span></a></div>
           <span class="contact-spark" aria-hidden="true">&#10022;</span>
         </div>

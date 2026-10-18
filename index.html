@@ -206,6 +206,47 @@
                 <li>Led remediation of 20 high-severity SSRF, RCE, and open-redirect findings using test-driven development and shift-left SAST/SCA practices.</li>
                 <li>Led a six-person team building an ECS Fargate AIOps triage assistant using TF-IDF classification and incident history. Won the 2026 divisional payments hackathon with an AWS Textract document-processing proof of concept.</li>
               </ul>
+              <details class="arch-details" open>
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">Event-Driven &amp; CDC Pipeline</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>Capital One — Change Data Capture, Event Streaming &amp; Self-Healing System Architecture</h4>
+                    <p>Real-time CDC data replication, payment event streaming, and automated resilience across cloud analytics platforms.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Ingestion &amp; Sources</span>
+                      <div class="arch-node"><span class="node-tag tag-db">DATABASE</span><strong>RDS SQL Server</strong><small>Transactional payments &amp; case data</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">PAYMENTS</span><strong>ACH &amp; Check 21 Feeds</strong><small>X9.37 &amp; NACHA file streams</small></div>
+                      <div class="arch-node"><span class="node-tag tag-ui">UI / CASES</span><strong>AngularJS &amp; JS Engine</strong><small>Small Business &amp; Fraud case state-machine</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">CDC &amp; Messaging</span>
+                      <div class="arch-node"><span class="node-tag tag-aws">AWS DMS</span><strong>Change Data Capture</strong><small>Real-time log capture &amp; deduplication</small></div>
+                      <div class="arch-node"><span class="node-tag tag-aws">SQS &amp; EventBridge</span><strong>Event Routing</strong><small>Decoupled async payment event bus</small></div>
+                      <div class="arch-node"><span class="node-tag tag-code">Python Lambdas</span><strong>Event Processors</strong><small>Document processing &amp; payload mapping</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Streaming &amp; Resilience</span>
+                      <div class="arch-node"><span class="node-tag tag-aws">AWS Kinesis</span><strong>Data Streams</strong><small>78M record migration pipeline</small></div>
+                      <div class="arch-node"><span class="node-tag tag-ai">ECS Fargate</span><strong>AIOps Triage Assistant</strong><small>TF-IDF classification &amp; self-healing (237 outages fixed)</small></div>
+                      <div class="arch-node"><span class="node-tag tag-aws">Cross-Region DR</span><strong>IaC Infrastructure</strong><small>Multi-region disaster recovery failover</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">04</span>
+                      <span class="arch-stage-title">Targets &amp; Analytics</span>
+                      <div class="arch-node"><span class="node-tag tag-data">Databricks</span><strong>Delta Lake Store</strong><small>Unified analytics &amp; 65-70% volume reduction</small></div>
+                      <div class="arch-node"><span class="node-tag tag-data">Snowflake &amp; OneLake</span><strong>Reporting Streams</strong><small>RE1, RA1, RI1, EOD Return data feeds</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II</span><span class="experience-meta">Truist Financial <i>·</i> Sep 2021&ndash;Nov 2022</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
@@ -217,6 +258,44 @@
                 <li>Led the enterprise Java upgrade from Java 8 to Java 11 across 19 microservices.</li>
                 <li>Planned disaster recovery and static-analysis improvements; expanded Selenium automation and addressed code-quality and vulnerability findings with Veracode, SonarQube, and Black Duck.</li>
               </ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">Hybrid Microservices &amp; CI/CD</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>Truist Financial — Private Banking &amp; Hybrid Cloud Architecture</h4>
+                    <p>Automated multi-repo CI/CD pipelines, 19 AWS microservices, and hybrid integration with legacy core banking servers.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Clients &amp; Vendors</span>
+                      <div class="arch-node"><span class="node-tag tag-ui">WEALTH PORTAL</span><strong>Wealth Management Site</strong><small>Private Banking web portal</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">VENDOR APIs</span><strong>Partner Services</strong><small>Third-party integrations</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">CI/CD &amp; Security</span>
+                      <div class="arch-node"><span class="node-tag tag-tool">GitLab CI/CD</span><strong>Pipeline Automation</strong><small>Multi-repository release deployment</small></div>
+                      <div class="arch-node"><span class="node-tag tag-sec">SAST / SCA</span><strong>Security Scanning</strong><small>Veracode, SonarQube &amp; Black Duck</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Cloud Microservices</span>
+                      <div class="arch-node"><span class="node-tag tag-aws">AWS Cloud</span><strong>19 AWS Microservices</strong><small>Java 8 → Java 11 &amp; Spring Boot</small></div>
+                      <div class="arch-node"><span class="node-tag tag-tool">Selenium</span><strong>Automated Test Suite</strong><small>End-to-end regression testing</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">04</span>
+                      <span class="arch-stage-title">On-Premise Core</span>
+                      <div class="arch-node"><span class="node-tag tag-db">HYBRID</span><strong>10 On-Prem Servers</strong><small>Core banking database &amp; legacy systems</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">DR FAILOVER</span><strong>Disaster Recovery</strong><small>High availability &amp; failover planning</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II</span><span class="experience-meta">Bank of America <i>·</i> Aug 2018&ndash;Sep 2021</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
@@ -227,6 +306,44 @@
                 <li>Scaled engineering from a solo developer to interviewing, hiring, and leading two full-stack teams totaling 10 engineers.</li>
                 <li>Expanded Selenium testing and resolved static-analysis findings with Checkmarx and SonarQube.</li>
               </ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">EricaOps &amp; Call Center Platform</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>Bank of America — EricaOps &amp; Retail Call Center Support Architecture</h4>
+                    <p>Developer operations release management platform integrated with Ansible &amp; Jenkins, powering retail call center assistant systems.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Users &amp; Clients</span>
+                      <div class="arch-node"><span class="node-tag tag-ui">CALL CENTER</span><strong>Retail Agents</strong><small>Human-in-the-loop Erica queries</small></div>
+                      <div class="arch-node"><span class="node-tag tag-ui">DEVOPS UI</span><strong>Engineers &amp; Ops</strong><small>Release verification dashboard</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">EricaOps Core</span>
+                      <div class="arch-node"><span class="node-tag tag-code">Java / Spring</span><strong>EricaOps Platform</strong><small>Invented tool for health &amp; release automation</small></div>
+                      <div class="arch-node"><span class="node-tag tag-sec">SAST</span><strong>Checkmarx &amp; SonarQube</strong><small>Static analysis &amp; security auditing</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Automation APIs</span>
+                      <div class="arch-node"><span class="node-tag tag-tool">Ansible API</span><strong>Configuration Management</strong><small>Environment health checks &amp; config state</small></div>
+                      <div class="arch-node"><span class="node-tag tag-tool">Jenkins API</span><strong>Build &amp; Deploy API</strong><small>Automated lower-environment release triggers</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">04</span>
+                      <span class="arch-stage-title">Environments</span>
+                      <div class="arch-node"><span class="node-tag tag-app">ENVIRONMENTS</span><strong>Lower &amp; Prod Envs</strong><small>Automated deployment verification &amp; version tracking</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">SELENIUM</span><strong>E2E Test Engine</strong><small>Automated release regression validation</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II · USCIS / DHS contract</span><span class="experience-meta">ERP International / Quadrant <i>·</i> Jun 2017&ndash;Jul 2018</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
@@ -235,6 +352,42 @@
                 <li>Contributed to secure online services processing more than 1.3 million Form I-90 applications while achieving a 95% customer satisfaction rating.</li>
                 <li>Evaluated performance and security with Fortify and SonarQube; received a Certificate of Appreciation from the Office of Information Technology and Transformation Delivery Division.</li>
               </ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">Federal Form Digitization</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>USCIS / DHS — Digital Immigration Forms System Architecture</h4>
+                    <p>Accessible public web application and secure backend micro-workflows processing 1.3M+ Form I-90 applications.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Public Frontend</span>
+                      <div class="arch-node"><span class="node-tag tag-ui">ANGULARJS</span><strong>Form I-90 Portal</strong><small>Accessible &amp; responsive public form UI</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">FORM WORKFLOWS</span><strong>Digitized Applications</strong><small>Guided multi-step applicant submission</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">Application Layer</span>
+                      <div class="arch-node"><span class="node-tag tag-code">Java / Spring</span><strong>RESTful Services</strong><small>Secure validation &amp; workflow processing</small></div>
+                      <div class="arch-node"><span class="node-tag tag-sec">FORTIFY</span><strong>Security &amp; Code Quality</strong><small>Fortify SAST &amp; SonarQube compliance</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Data Storage</span>
+                      <div class="arch-node"><span class="node-tag tag-db">POSTGRESQL</span><strong>Secure Database</strong><small>Encrypted applicant data &amp; form records</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">04</span>
+                      <span class="arch-stage-title">Federal Processing</span>
+                      <div class="arch-node"><span class="node-tag tag-app">USCIS BACKEND</span><strong>1.3M+ Applications</strong><small>95% customer satisfaction &amp; admin dashboard</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Chief Technical Officer</span><span class="experience-meta">BRDG Tech <i>·</i> 2016&ndash;2017</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
@@ -243,18 +396,146 @@
                 <li>Architected Fulcrum, an AWS processing engine handling up to 500,000 ACA health-enrollment and medical records per minute.</li>
                 <li>Developed Fulcrum with Java, Maven, Spring, AWS RDS for MySQL, and AWS EC2; also provided forensic technical analysis supporting Department of Justice litigation.</li>
               </ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">High-Throughput Processing</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>BRDG Tech — Fulcrum ACA High-Throughput Processing Engine</h4>
+                    <p>Scalable AWS cloud engine built with Java and Spring processing 500,000 healthcare records per minute.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Data Ingestion</span>
+                      <div class="arch-node"><span class="node-tag tag-data">ACA FEEDS</span><strong>Health &amp; Claims Data</strong><small>Enrollment &amp; medical records streaming</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">Fulcrum Engine</span>
+                      <div class="arch-node"><span class="node-tag tag-aws">AWS EC2</span><strong>Fulcrum Processing Core</strong><small>Java, Maven, Spring batch computation</small></div>
+                      <div class="arch-node"><span class="node-tag tag-code">PERFORMANCE</span><strong>500K recs / min</strong><small>High-throughput record transformation</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Cloud Storage</span>
+                      <div class="arch-node"><span class="node-tag tag-db">AWS RDS</span><strong>RDS for MySQL</strong><small>Structured claims data &amp; transaction log</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">04</span>
+                      <span class="arch-stage-title">Analytics &amp; DOJ</span>
+                      <div class="arch-node"><span class="node-tag tag-app">LITIGATION SUPPORT</span><strong>Forensic Data Analysis</strong><small>Technical analysis for DOJ legal proceedings</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">Software Engineer II · CMS contractor</span><span class="experience-meta">Accenture Federal <i>·</i> Mar 2014&ndash;Jun 2016</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
               <ul><li>Architected and developed CMS Risk Adjustment and Reinsurance software for processing medical and pharmaceutical claims on ACA EDGE servers, supporting $14.6 billion in healthcare allocations.</li><li>Managed automated aggregation and ETL routines for weekly executive and operational reports.</li><li>Led technical resolution calls with health-insurance issuers to resolve data disputes and reporting discrepancies.</li></ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">CMS Claims &amp; Financial Allocation</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>Accenture Federal — CMS Risk Adjustment &amp; Claims Processing Architecture</h4>
+                    <p>ETL aggregation engine processing medical and pharmaceutical claims supporting $14.6B in healthcare allocations.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">EDGE Servers</span>
+                      <div class="arch-node"><span class="node-tag tag-data">ISSUER FEEDS</span><strong>EDGE Server Claims</strong><small>Medical &amp; pharmaceutical claims data</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">ETL &amp; Aggregation</span>
+                      <div class="arch-node"><span class="node-tag tag-code">SPRING BATCH</span><strong>ETL Pipeline Engine</strong><small>Automated aggregation &amp; calculation routines</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">RECONCILIATION</span><strong>Dispute Resolution</strong><small>Technical reconciliation layer for issuers</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Allocation Engine</span>
+                      <div class="arch-node"><span class="node-tag tag-db">CMS CORE</span><strong>Risk &amp; Reinsurance</strong><small>Statutory financial calculation model</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">04</span>
+                      <span class="arch-stage-title">Financial Output</span>
+                      <div class="arch-node"><span class="node-tag tag-data">$14.6B ALLOCATION</span><strong>Federal Reports</strong><small>Weekly executive &amp; operational distribution</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">J2EE Developer · Wealth Management</span><span class="experience-meta">Wells Fargo <i>·</i> Oct 2013&ndash;Jan 2014</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
               <ul><li>Delivered full-stack J2EE web applications for the Wealth Management division, translating complex financial requirements into end-to-end technical solutions.</li></ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">Enterprise J2EE Web Architecture</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>Wells Fargo — Wealth Management Enterprise J2EE Architecture</h4>
+                    <p>Full-stack enterprise Java web platform integrating client advisory tools with backend core banking services.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Web Tier</span>
+                      <div class="arch-node"><span class="node-tag tag-ui">CLIENT PORTAL</span><strong>Wealth Management Portal</strong><small>Client &amp; advisor web dashboard</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">Application Tier</span>
+                      <div class="arch-node"><span class="node-tag tag-code">J2EE / SERVLETS</span><strong>Enterprise Java Apps</strong><small>Business logic &amp; financial calculations</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">WEB SERVICES</span><strong>SOAP / REST APIs</strong><small>Internal financial data services</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Core Integration</span>
+                      <div class="arch-node"><span class="node-tag tag-db">ENTERPRISE DB</span><strong>Banking Core DB</strong><small>Account, portfolio &amp; ledger systems</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
             <details class="experience-entry">
               <summary><span class="experience-role">J2EE Developer / Teaching Assistant</span><span class="experience-meta">MultiVision, Inc. <i>·</i> Jun 2013&ndash;Jun 2016</span><span class="experience-toggle" aria-hidden="true">+</span></summary>
               <ul><li>Completed an intensive enterprise J2EE engineering bootcamp and mentored junior developers on Java frameworks and web services as a teaching assistant.</li></ul>
+              <details class="arch-details">
+                <summary class="arch-summary"><span class="arch-summary-title">Architecture Diagram</span><span class="arch-summary-badge">J2EE Training &amp; Mentorship</span></summary>
+                <div class="arch-diagram">
+                  <div class="arch-header">
+                    <h4>MultiVision — J2EE Enterprise Bootcamp &amp; Service Architecture</h4>
+                    <p>Comprehensive J2EE engineering ecosystem, mentorship framework, and multi-tier web service architectures.</p>
+                  </div>
+                  <div class="arch-flow">
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">01</span>
+                      <span class="arch-stage-title">Mentorship</span>
+                      <div class="arch-node"><span class="node-tag tag-app">TEACHING ASSISTANT</span><strong>Junior Engineer Mentorship</strong><small>Code reviews &amp; design pattern guidance</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">02</span>
+                      <span class="arch-stage-title">Framework Stack</span>
+                      <div class="arch-node"><span class="node-tag tag-code">CORE JAVA</span><strong>Java 7/8 &amp; Spring</strong><small>Spring Core, MVC &amp; Hibernate ORM</small></div>
+                      <div class="arch-node"><span class="node-tag tag-app">SERVICES</span><strong>SOAP &amp; RESTful APIs</strong><small>Web service standards &amp; XML/JSON specs</small></div>
+                    </div>
+                    <div class="arch-arrow" aria-hidden="true">→</div>
+                    <div class="arch-stage">
+                      <span class="arch-stage-num">03</span>
+                      <span class="arch-stage-title">Delivery</span>
+                      <div class="arch-node"><span class="node-tag tag-db">DEPLOYMENT</span><strong>Enterprise Web Apps</strong><small>Application server deployment &amp; SQL integration</small></div>
+                    </div>
+                  </div>
+                </div>
+              </details>
             </details>
           </div>
         </div>
